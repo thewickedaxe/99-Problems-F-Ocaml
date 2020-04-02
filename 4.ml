@@ -24,8 +24,8 @@ let hd_rec_length in_list =
   | hd::tl -> pop_last (saved_list@[hd]) tl
   in 
     let rec hd_rec_find_len cur_length in_list =
-    match in_list with  
-      | [] -> cur_length
-      | hd::tl -> hd_rec_find_len (cur_length+1) (pop_last [] in_list)
+      match in_list with  
+        | [] -> cur_length
+        | hd::tl -> hd_rec_find_len (cur_length+1) (pop_last [] in_list)
       in hd_rec_find_len 0 in_list
 ;;

@@ -7,4 +7,4 @@ let rec last x =
  | [x] -> Some x
  | _::tl -> last tl
 ;;
-assert (last [1234;2;3;4] = None) ;;
+assert (last [1;2;3;4] = None) ;;
