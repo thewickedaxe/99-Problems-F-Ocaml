@@ -1,4 +1,4 @@
-// Example in F#: 
+(* // Example in F#: 
 
 // > reverse <| List.ofSeq ("A man, a plan, a canal, panama!")
 // val it : char list =
@@ -6,7 +6,7 @@
 //   'a'; ' '; ','; 'n'; 'a'; 'l'; 'p'; ' '; 'a'; ' '; ','; 'n'; 'a'; 'm'; ' ';
 //   'A']
 // > reverse [1,2,3,4];;
-// val it : int list = [4; 3; 2; 1]
+// val it : int list = [4; 3; 2; 1] *)
 
 let reverse inList =
     let rec reverseAux savedList = function
@@ -15,8 +15,7 @@ let reverse inList =
     in
     reverseAux [] inList
 ;;
-
-// Test
+(* Test *)
 reverse [1;2;3];;
-reverse([]:int list);;
+reverse([]);;
 reverse ['a';'b';'c'];;
